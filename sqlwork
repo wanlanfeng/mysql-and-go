@@ -1,0 +1,29 @@
+//仓库
+CREATE TABLE Warehouses
+(
+warehouse_code VARCHAR(100)primary key,
+warehouse_capacity INTEGER NOT NULL
+);
+//服装
+CREATE TABLE Costumes
+(
+id VARCHAR(30)primary key,
+size varchar(30),
+price int,
+type  CHAR(10)
+);
+//供应商
+create table Providers
+(
+id varchar(100)primary key,
+name varchar(100)
+);
+//供应情况
+create table Provide_case
+(
+costume_id varchar(30),
+provider_id varchar(30),
+costume_level varchar(30),
+primary key(costume_id,provider_id)
+);
+wanlanfeng:1925688295WLFwlf
